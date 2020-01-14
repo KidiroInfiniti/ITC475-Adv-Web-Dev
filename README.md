@@ -1,2 +1,2 @@
 # ITC475-Adv-Web-Dev
-Class Repo
+Class Repo for Caron Kincaid
