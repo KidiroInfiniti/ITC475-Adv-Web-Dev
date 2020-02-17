@@ -1,0 +1,149 @@
+header.logo {
+    background-color: #add8e6;
+    padding: 10px;
+    margin: 0;
+}
+
+.bar {
+    padding: 10px;
+    background-color: lightgrey;
+}
+
+.nav {
+    position: relative;
+    padding-left: 40%;
+}
+
+.navigation a {
+    color: black;
+    display: inline;
+    padding-right: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
+
+.navigation a:hover {
+    color: orange;
+}
+
+.travel_packages {
+    text-align: left;
+    margin-left: 15px;
+    color: black;
+    font-size: 25px;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: left;
+    color: black;
+    font-size: 25px;
+    font-family: Arial, sans-serif;
+}
+
+p.packages {
+    text-align: left;
+    margin-left: 15px;
+    color: black;
+    font-size: 17px;
+    font-family: Arial, sans-serif;
+}
+
+p.og_price {
+    color: gray;
+    margin-left: 5px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+p.diff_price {
+    color: black;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+p.savings {
+    color: green;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+p.copyright {
+    color: white;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    margin-top: 0;
+    padding-bottom: 10px;
+}
+
+p.mega {
+    color: white;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+p.email {
+    color: white;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+div.logo {
+    height: 200px;
+    width: 600px;
+    padding: 1px;
+    border: none;
+    margin: 0;
+}
+
+div.boxes {
+    display: flex;
+}
+
+div.Maldives {
+    height: 400px;
+    width: 240px;
+    padding: 10px;
+    border: 1px solid black;
+    margin: 1% 1% 1% 1%;
+}
+
+div.Mexico {
+    height: 400px;
+    width: 240px;
+    padding: 10px;
+    border: 1px solid black;
+    margin: 1% 1% 1% 0%;
+}
+
+div.Zealand {
+    height: 400px;
+    width: 240px;
+    padding: 10px;
+    border: 1px solid black;
+    margin: 1% 1% 1% 0%;
+}
+
+div.Venice {
+    height: 400px;
+    width: 240px;
+    padding: 10px;
+    border: 1px solid black;
+    margin: 1% 1% 1% 0%;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+body {
+    background-color: white;
+}
+
+footer {
+    padding: 10px 50px 50px 50px;
+    background-color: black;
+    margin: 0;
+}
