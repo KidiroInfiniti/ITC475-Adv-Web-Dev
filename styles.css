@@ -1,3 +1,5 @@
+/* For Desktop */
+
 header.logo {
     background-color: #add8e6;
     padding: 10px;
@@ -99,38 +101,31 @@ div.logo {
 
 div.boxes {
     display: flex;
+    flex-wrap: wrap;
 }
 
-div.Maldives {
+.Resort {
     height: 450px;
     width: 300px;
     padding: 10px;
     border: 1px solid black;
-    margin: 1% 1% 1% 1%;
+    margin: 1% 0% 1% 1%;
+    break-inside: avoid;
 }
 
-div.Mexico {
-    height: 450px;
-    width: 300px;
-    padding: 10px;
-    border: 1px solid black;
-    margin: 1% 1% 1% 0%;
+.Resort:hover {
+    background-color: black;
+    transition: 1.00s ease-in;
 }
 
-div.Zealand {
-    height: 450px;
-    width: 300px;
-    padding: 10px;
-    border: 1px solid black;
-    margin: 1% 1% 1% 0%;
+.Resort:hover h1 {
+    color: white;
+    transition: 1.00s ease-in;
 }
 
-div.Venice {
-    height: 450px;
-    width: 300px;
-    padding: 10px;
-    border: 1px solid black;
-    margin: 1% 1% 1% 0%;
+.Resort:hover .diff_price {
+    color: white;
+    transition: 1.00s ease-in;
 }
 
 img {
@@ -146,4 +141,24 @@ footer {
     padding: 10px 50px 50px 50px;
     background-color: black;
     margin: 0;
+}
+
+@media only screen and (max-width: 768px) {
+    .nav {
+        position: relative;
+        background-color: black;
+        padding: 10px;
+    }
+    .navigation a {
+        color: white;
+        display: inline;
+        padding-right: 30px;
+        text-decoration: none;
+        text-align: center;
+        font-weight: bold;
+        font-family: Arial, sans-serif;
+    }
+    .boxes {
+        justify-content: center;
+    }
 }
