@@ -1,37 +1,64 @@
-class Clock extends React.Component {
-    constructor(props) {
-      super(props);
-      this.state = {date: new Date()};
+const App = React.createClass({
+
+    getInitialState () {
+    return {
+        time: "00:00:00",
+      amPm: "am"
     }
+  },
   
-    componentDidMount() {
-      this.timerID = setInterval(
-        () => this.tick(),
-        1000
-      );
-    }
+  componentDidMount () {
+    this.loadInterval = setInterval(
+      this.getTime, 1000
+    );
+  },
   
-    componentWillUnmount() {
-      clearInterval(this.timerID);
-    }
-  
-    tick() {
+  getTime () {
+    const 
+      takeTwelve = n => n > 12 ?  n  - 12 : n,
+         addZero = n => n < 10 ? "0" +  n : n;
+       
+    setInterval(() => {
+        let d, h, m, s, t, amPm;
+      
+      d = new Date();
+      h = addZero(takeTwelve(d.getHours())); 
+      m = addZero(d.getMinutes()); 
+      s = addZero(d.getSeconds());
+          t = `${h}:${m}:${s}`;
+      
+      amPm = d.getHours() >= 12 ? "pm" : "am";
+
       this.setState({
-        date: new Date()
+        time: t, 
+        amPm: amPm
       });
-    }
+      
+    }, 1000);
+  },
   
-    render() {
-      return (
-        <div>
-          <h1>Hello, world!</h1>
-          <h2>It is {this.state.date.toLocaleTimeString()}.</h2>
+    render () {
+    return (
+      <div className="outer">
+        <div className="inner">
+          <div className="most-inner">
+            <span className={
+              this.state.time === "00:00:00" 
+                ? "time blink" 
+                : "time"} 
+            > {this.state.time}
+            </span>
+            <span className="amPm">
+              {this.state.amPm}
+            </span>
+          </div>
         </div>
-      );
-    }
+      </div>
+    );
   }
-  
-  ReactDOM.render(
-    <Clock />,
-    document.getElementById('root')
-  );
+});
+
+ReactDOM.render(
+  <App />, 
+  document.getElementById('clock')
+);
