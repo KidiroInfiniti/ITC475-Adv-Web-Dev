@@ -5,8 +5,12 @@
     background-color: #add8e6;
     padding: 10px;
     margin: 0;
-    font-family: 'roboto';
     font-weight: 400;
+}
+
+#clock{
+  width: 400px;
+  height: 400px;
 }
 
 .bar {
