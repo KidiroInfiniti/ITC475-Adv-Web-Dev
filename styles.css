@@ -3,8 +3,22 @@
 
 .header {
     background-color: #add8e6;
-    padding: 10px;
+    padding: 0px;
     margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#clock{
+    padding-left: 40vw;
+}
+
+#sun{
+    opacity: 0;
+}
+
+#moon{
+    opacity: 0;
 }
 
 .bar {
@@ -95,7 +109,7 @@ p.email {
 div.logo {
     height: 200px;
     width: 600px;
-    padding: 1px;
+    padding-top: 1px;
     border: none;
     margin: 0;
 }
