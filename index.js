@@ -1,5 +1,25 @@
-import React from "react"
-import ReactDOM from "react-dom"
+const e = React.createElement;
 
-ReactDOM.render(<h1>Hello World</h1>, document.getElementById("root"))
+class LikeButton extends React.Component{
+    constructor(props)
+    {
+        super(props);
+        this.state = { liked: false};
+    }
 
+    render(){
+        if(this.state.liked){
+            return 'You liked this.';
+        }
+    
+
+    return e(
+        'button',
+        {onclick: () => this.setState({liked: true}) },
+        'Like'
+    );
+    }
+}
+
+const domContainer = document.querySelector('#button_container');
+ReactDOM.render(e(LikeButton, domContainer));
