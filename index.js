@@ -1,3 +1,5 @@
+'use strict';
+
 const e = React.createElement;
 
 class LikeButton extends React.Component{
@@ -21,10 +23,5 @@ class LikeButton extends React.Component{
     }
 }
 
-document.querySelectorAll('.button_container')
-  .forEach(domContainer => {
-    ReactDOM.render(
-      e(LikeButton),
-      domContainer
-    );
-  });
+const domContainer = document.querySelector('#button_container');
+ReactDOM.render(e(LikeButton), domContainer);
