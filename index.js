@@ -24,7 +24,7 @@ class WelcomeComponent extends React.Component {
 
         return (<div>
             <h1>
-                {time.toLocaleTimeString()}
+                {this.state.time.toLocaleTimeString()}
             </h1>
         </div>);
     }
