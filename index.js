@@ -1,6 +1,25 @@
-import React from "react"
-import ReactDOM from "react-dom"
+'use strict';
 
-import LikeButton from "./LikeButton"
+const e = React.createElement;
 
-ReactDOM.render(<LikeButton />, document.getElementById("button_container"))
+class LikeButton extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { liked: false };
+  }
+
+  render() {
+    if (this.state.liked) {
+      return 'You liked this.';
+    }
+
+    return e(
+      'button',
+      { onClick: () => this.setState({ liked: true }) },
+      'Like'
+    );
+  }
+}
+
+const domContainer = document.querySelector('#button_container');
+ReactDOM.render(e(LikeButton), domContainer);
