@@ -4,13 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mega Travel</title>
     <!--Stylesheet-->
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <title>Mega Travel</title>
+    <!--Javascript-->
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+    <script src="js/Welcome.js"></script>
 </head>
-
 <body style="margin: 0;">
-    <div id="welcome_componenet"></div>
     <!--Logo-->
     <header class="header">
         <div class="logo">
@@ -22,6 +24,7 @@
     <!--Navbar-->
     <header class="nav">
         <nav>
+            <div id="WelcomeBar"></div>
             <ul class="navigation">
                 <a href="index.html">Home</a>
                 <a href="about.html">About Us</a>
@@ -29,6 +32,9 @@
             </ul>
         </nav>
     </header>
+    <div id="root">
+
+    </div>
     <h1 class="travel_packages">Travel Packages</h1>
     <p class="packages">We are specialized with International Travel and Tours. Our expertized and experience<br> can save you 100's of dollars in you pocket. Besides the money can also save your<br> valuable time at the time of transit or tour. You decide you budget and
         the time form<br> your comfort zone. We will make it happen for you for an exceptional memory. Mega <br> Travels is commited for an excellent service and support for all of its past, present and<br> future custimers. We are here today only for
@@ -84,10 +90,6 @@
         <p class="mega">MEGA TRAVELS</p>
         <p class="email">mega@travels.com</p>
     </footer>
-    <!--Javascript-->
-    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
-    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
-    <script src="index.js" type="text/jsx"></script>
 </body>
 
 </html>
