@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <script src="index.pack.js"></script>
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin> </script>
     <title>Mega Travel</title>
 </head>
 
@@ -32,9 +34,16 @@
     </header>
     <div id="root"></div>
     <h1 class="travel_packages">Contact an Agent</h1>
-    <p class="packages">
-        We would love to know more about your travel plans. Please fill out this contact form to<br>get in toucwith a travel agent.
-    </p>
+    <p class="packages"> We would love to know more about your travel plans. Please fill out this contact form to<br>get in touch with a travel agent. </p>
+
+    <form action="confirm.php" method="post"></form>
+    <div id="ContactForm"></div>
+
+    </div>
+    <input type-"submit">
+    </form>
+
+    <script src="js/ContactForm.js"></script>
     <!--Footer-->
     <footer>
         <p class="copyright">Copyright Protected. All rights reserved</p>
